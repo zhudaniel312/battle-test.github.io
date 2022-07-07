@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Battle Mechanic</title>
+        
+        <style>
+          #you{
+            position: absolute;
+            top: 80px;
+            left: 30px;
+          }
+        </style>
+    </head>
+    
+    <body>
+      <div id="you"> </div>
+      <div id="enemy"> </div>
+    </body>
+    
+    <script>
+      // variables
+      var youEl = document.getElementById("you");
+      
+      function createCharacter(element, hp, atk, def) {
+      element.innerHTML = "<h3> HP:" + hp;
+     }
