@@ -13,8 +13,8 @@
             color: black;
             border: solid 3px black;
             font-family: Georgia;
-            width: 400px;
-            height: 230px;
+            width: 375px;
+            height: 200px;
             
           }
         </style>
@@ -29,10 +29,12 @@
       // variables
       var youEl = document.getElementById("you");
       
-      var createCharacter = function(name, hp, atk, def) {
-        return "<h3> HP:" + hp + "</h3> <br> <h2>" + name + "</h2>";      
+      var createCharacter = function(element, name, hp, def, atk) {
+        element.innerHTML = "<h3> HP:" + hp + "</h3> <br> <h2>" + name + "</h2>";      
+        h3.style.fontSize = "2.75em";
+        h2.style.fontSize = "2.25em";
       }
         
-      youEl.innerHTML = createCharacter("You", 50, 0, 0);
+      createCharacter("youEl", "You", 50, 0, 0);
     </script>
 </html>
