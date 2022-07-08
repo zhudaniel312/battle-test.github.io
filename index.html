@@ -31,10 +31,10 @@
       // variables
       var youEl = document.getElementById("you");
       
-      var createCharacter = function(element, name, hp, def, atk) {
-        element.innerHTML = "<h3> HP:" + hp + "</h3> <br> <h2>" + name + "</h2>";      
+      var createCharacter = function(name, hp, def, atk) {
+        return "<h3> HP:" + hp + "</h3> <br> <h2>" + name + "</h2>";      
       }
         
-      createCharacter("youEl", "You", 50, 0, 0);
+      youEl.innerHTML = createCharacter("You", 50, 0, 0);
     </script>
 </html>
