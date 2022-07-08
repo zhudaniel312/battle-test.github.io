@@ -13,9 +13,22 @@
             color: black;
             border: solid 3px black;
             font-family: Georgia;
-            font-size: 1.75em;
+            font-size: 1.50em;
             text-align: center;
-            line-height: 0.5;
+            line-height: 0.65;
+            width: 375px;
+            height: 200px;
+              
+          #enemy{
+            position: absolute;
+            top: 140px;
+            right: 80px;
+            color: black;
+            border: solid 3px black;
+            font-family: Georgia;
+            font-size: 1.50em;
+            text-align: center;
+            line-height: 0.65;
             width: 375px;
             height: 200px;
             
@@ -29,13 +42,15 @@
     </body>
     
     <script>
-      // variables
+      // elements
       var youEl = document.getElementById("you");
+      var enemyEl = document.getElementById("enemy");
       
       var createCharacter = function(name, hp, def, atk) {
         return "<h3> HP:" + hp + "</h3> <br> <h2>" + name + "</h2>";      
       }
         
       youEl.innerHTML = createCharacter("You", 50, 0, 0);
+      enemyEl.innerHTML = createCharacter(">:(", 30, 0, 0);
     </script>
 </html>
