@@ -13,6 +13,8 @@
             color: black;
             border: solid 3px black;
             font-family: Georgia;
+            font-size: 2.5em;
+            text-align: center;
             width: 375px;
             height: 200px;
             
@@ -31,8 +33,6 @@
       
       var createCharacter = function(element, name, hp, def, atk) {
         element.innerHTML = "<h3> HP:" + hp + "</h3> <br> <h2>" + name + "</h2>";      
-        h3.style.fontSize = "2.75em";
-        h2.style.fontSize = "2.25em";
       }
         
       createCharacter("youEl", "You", 50, 0, 0);
