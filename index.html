@@ -29,9 +29,9 @@
       // variables
       var youEl = document.getElementById("you");
       
-      var createCharacter = function(element, name, hp, atk, def) {
-        element.innerHTML = "<h3> HP:" + hp + "</h3> <br> <h2>" + name + "</h2>";      
+      var createCharacter = function(name, hp, atk, def) {
+        return "<h3> HP:" + hp + "</h3> <br> <h2>" + name + "</h2>";      
       }
         
-        createCharacter(youEl, "you", "50", "0", "0");
+        youEl = createCharacter("You", "50", "0", "0");
 </html>
